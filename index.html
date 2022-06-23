@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girchi | გირჩი</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-[#E5E5E5] text-grayOpacityFull">
+    <header class="bg-white">
+        <!-- HEADER TOP -->
+        <div class="container px-6 mx-auto pt-6 pb-4 md:px-16">
+            <div class="flex justify-between items-center pb-5 border-b-2 border-b-lightGreen">
+                <a href="index.html" class="flex items-center">
+                    <img src="./assets/logo.png" alt="logo">
+                    <h1 class="text-darkGreen text-2xl font-bold ml-3">გირჩი</h1>
+                </a>
+                <div class="flex space-x-6 items-center text-white">
+                    <button class="hamburger lg:hidden">
+                        <span class="hamburger-line text-black"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <a href="#" class="hidden py-3 px-6 mr-1 rounded-lg text-sm text-white bg-lightGreen duration-200 hover:bg-darkGreen md:block">შესვლა</a>
+                    <a href="#" class="hidden py-3 px-6 rounded-lg text-sm text-white bg-mainYellow duration-200 hover:bg-opacity-80 md:block">რეგისტრაცია</a>   
+                </div>
+            </div>
+            <!-- HEADER BOTTOM -->
+            <div class="relative flex-col items-center justify-between pt-5 lg:flex xl:flex-row ">
+                <nav class="header-nav scale-y-0 hidden opacity-0 absolute left-0 top-0 transition-all w-full bg-white z-50 lg:w-auto lg:scale-100 lg:opacity-100 lg:block lg:static">
+                    <div class="flex flex-col items-center text-white">
+                        <a href="#" class="nav-link py-3 px-6 my-1 rounded-lg text-sm text-white bg-lightGreen duration-200 hover:bg-darkGreen md:hidden">შესვლა</a>
+                        <a href="#" class="nav-link py-3 px-6 rounded-lg text-sm text-white bg-mainYellow duration-200 hover:bg-opacity-80 md:hidden">რეგისტრაცია</a>
+                    </div>
+                    <ul class="flex flex-col items-center justify-between space-x-6 px-6 lg:flex-row">
+                        <li class="nav-link mt-2 lg:mt-0"><a href="#">დეპუტატის წერილები</a></li>
+                        <li class="nav-link group flex items-center mt-2 lg:mt-0">
+                            <a href="#">ჩვენს შესახებ</a>
+                            <img class="ml-1 duration-300 group-hover:-rotate-180" src="./assets/vector.svg" alt="vector">
+                        </li>
+                        <li class="nav-link group flex items-center mt-2 lg:mt-0">
+                            <a href="#">სიახლეები</a>
+                            <img class="ml-1 duration-300 group-hover:-rotate-180" src="./assets/vector.svg" alt="vector">
+                        </li>
+                        <li class="nav-link group flex items-center mt-2 lg:mt-0">
+                            <a href="#">ეთერები</a>
+                            <img class="ml-1 duration-300 group-hover:-rotate-180" src="./assets/vector.svg" alt="vector">
+                        </li>
+                        <li class="nav-link group flex items-center mt-2 lg:mt-0">
+                            <a href="#">თარგმანები</a>
+                            <img class="ml-1 duration-300 group-hover:-rotate-180" src="./assets/vector.svg" alt="vector">
+                        </li>
+                        <li class="nav-link mt-2 lg:mt-0"><a href="#">გაზეთი</a></li>
+                    </ul>
+                </nav>
+                <div class="flex items-center space-x-4 mt-4 xl:mt-0">
+                    <a href="#" class="py-3 px-5 text-white rounded-lg text-sm bg-grayOpacityFull duration-200 hover:bg-opacity-90">დაგვაფინანსე</a>
+                    <form class="group w-[200px] h-10 pl-3 pr-1 rounded-lg flex justify-between border border-grayOpacityFull">
+                        <input class="w-full focus:outline-none placeholder:" type="search" name="search" id="search" placeholder="Search..">
+                        <button type="submit"><img src="./assets/search.svg" alt="search icon"></button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        
+    </header>
+
+    <section class="container mx-auto mt-3 grid grid-cols-1 gap-5 items-start xl:grid-cols-dashboard">
+            <section class="p-6 bg-white rounded-xl">
+                <div class="flex items-center space-x-3 mb-8 text-2xl ">
+                    <img src="./assets/analitycs.svg" alt="analitycs">
+                    <h3>ანალიტიკა</h3>
+                </div>
+                <div class="grid grid-cols-1 gap-5 justify-center rounded-xl md:grid-cols-cards ">
+                    <div class="flex flex-col pl-7 pt-4 pb-7 bg-veryLightGreen rounded-xl">
+                        <div class="flex items-center space-x-4 mb-11">
+                            <img src="./assets/registered.svg" alt="registered icon">
+                            <h3 class="text-lg ">დარეგისტრირდა</h3>
+                        </div>
+                        <div>
+                            <div class="w-56 space-x-1  pb-3 border-b-2 border-b-grayOpacityFull">
+                                <span class="text-lg font-bold">20.000</span>
+                                <span class="text-sm ">მომხარებელი</span>
+                            </div>
+                            <div class="flex items-center space-x-1 pt-3">
+                                <span class="text-lightGreen">205+</span>
+                                <span class="">ახალი მოხმარებელი</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col pl-7 pt-4 pb-7 bg-lightBlue rounded-xl">
+                        <div class="flex items-center space-x-4 mb-11">
+                            <img src="./assets/owner.svg" alt="owner icon">
+                            <h3 class="text-lg ">GeD მფლობელი</h3>
+                        </div>
+                        <div>
+                            <div class="w-56 space-x-1  pb-3 border-b-2 border-b-grayOpacityFull">
+                                <span class="text-lg font-bold">10.000</span>
+                                <span class="text-sm ">მომხარებელი</span>
+                            </div>
+                            <div class="flex items-center space-x-1 pt-3">
+                                <span class="text-lightGreen">205+</span>
+                                <span class="">ახალი მოხმარებელი</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col pl-7 pt-4 pb-7 bg-mainOrange rounded-xl">
+                        <div class="flex items-center space-x-4 mb-11">
+                            <img src="./assets/incomes.svg" alt="incomes icon">
+                            <div class="flex flex-col space-y-1">
+                                <h3 class="text-lg ">შემოსავლები</h3>
+                                <span class="text-sm ">პროექტების</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="w-56 space-x-1  pb-3 border-b-2 border-b-grayOpacityFull">
+                                <span class="text-lg font-bold">10.000</span>
+                                <span class="text-sm ">ეროვნული ლარი</span>
+                            </div>
+                            <div class="flex items-center space-x-1 pt-3">
+                                <span class="text-lightGreen flex items-center">25%<img src="./assets/ascend.svg" alt="ascend icon"></span>
+                                <span class="">24სთ განმვალობაში</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col pl-7 pt-4 pb-7 bg-mainOrange rounded-xl">
+                        <div class="flex items-center space-x-4 mb-11">
+                            <img src="./assets/incomes.svg" alt="incomes icon">
+                            <div class="flex flex-col space-y-1">
+                                <h3 class="text-lg ">შემოსავლები</h3>
+                                <span class="text-sm ">პროექტების</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="w-56 space-x-1  pb-3 border-b-2 border-b-grayOpacityFull">
+                                <span class="text-lg font-bold">20.000</span>
+                                <span class="text-sm ">ეროვნული ლარი</span>
+                            </div>
+                            <div class="flex items-center space-x-1 pt-3">
+                                <span class="text-mainRed flex items-center">25%<img src="./assets/descend.svg" alt="ascend icon"></span>
+                                <span class="">24სთ განმვალობაში</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="px-7 py-9 bg-white rounded-xl flex flex-col justify-center items-center">
+                <div class="flex items-center space-x-3 mb-8 text-2xl self-start ">
+                    <img src="./assets/coin.svg" alt="coin">
+                    <h3>ჩვენი ქოინი</h3>
+                </div>
+                <div class="w-44 h-44 rounded-full border-[22px]  border-lightGreen flex flex-col justify-center items-center mb-8 md:w-60 md:h-60 xl:w-44 xl:h-44">
+                    <span class="block text-[28px] font-bold">100%</span>
+                    <span class="block text-sm">გაცემულია</span>
+                </div>
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-[14px] h-[14px] rounded-full bg-lightGreen"></div>
+                        <span>გაცემულია</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-[14px] h-[14px] rounded-full bg-mainYellow"></div>
+                        <span>მარაგი</span>
+                    </div>
+                </div>
+                <div class="flex space-x-2">
+                    <span class="whitespace-nowrap">სულ გასაცემია - </span>
+                    <span class="text-lightGreen block whitespace-nowrap">5 000 000</span>
+                    <img src="./assets/GED.svg" alt="GED coin">
+                </div>
+            </section>
+            <section class="p-6 bg-white rounded-xl">
+                <div class="flex items-center space-x-3 mb-5 text-2xl ">
+                    <img src="./assets/schedule.svg" alt="schedule">
+                    <h3>გრაფიკი</h3>
+                </div>
+                <div class="flex justify-end space-x-5">
+                    <button class="py-2 px-5 border rounded-xl border-grayOpacityFull duration-200 focus:outline-none hover:bg-grayOpacityFull hover:text-white">24სთ</button>
+                    <button class="py-2 px-5 border rounded-xl border-grayOpacityFull duration-200 focus:outline-none hover:bg-grayOpacityFull hover:text-white">კვირა</button>
+                    <button class="py-2 px-5 border rounded-xl border-grayOpacityFull duration-200 focus:outline-none hover:bg-grayOpacityFull hover:text-white">თვე</button>
+                    <button class="py-2 px-5 border rounded-xl border-grayOpacityFull duration-200 focus:outline-none hover:bg-grayOpacityFull hover:text-white">წელი</button>
+                </div>
+            </section>
+            <section class="px-7 py-9 bg-white rounded-xl flex flex-col">
+                <div class="flex items-center self-start space-x-3 mb-5 text-2xl ">
+                    <img src="./assets/rating.svg" alt="rating icon">
+                    <h3>რეიტინგი</h3>
+                </div>  
+                <ul class="flex items-center w-full justify-between py-4 px-7 text-white bg-grayOpacityFull relative">
+                    <div class="w-7 h-7 rounded-full bg-white absolute left-0 top-1/2 -translate-x-2/3 -translate-y-1/2 "></div> 
+                    <li>პოზიცია</li>
+                    <li class="mx-11 ">პოლიტიკოსი</li>
+                    <li>პ/წონა</li>
+                    <div class="w-7 h-7 rounded-full bg-white absolute right-0 top-1/2 translate-x-2/3 -translate-y-1/2 "></div> 
+                </ul>
+                <div class="flex justify-between items-center py-6 px-7">
+                    <img class="p-[2px] rounded-full border border-grayOpacityFull" src="./assets/profile-1.png" alt="profile picture">
+                    <a class="text-lg  hover:underline" href="#">იაგო ხვიჩია</a>
+                    <div class="flex space-x-1 items-center text-mainYellow text-xl ">
+                        <span>1500</span>
+                        <img src="./assets/GED-yellow.svg" alt="GED coin">
+                    </div>
+                </div>
+                <hr class="bg-grayOpacityFull bg-opacity-30 ">
+                <div class="flex justify-between items-center py-6 px-7">
+                    <img class="p-[2px] rounded-full border border-grayOpacityFull" src="./assets/profile-2.png" alt="profile picture">
+                    <a class="text-lg  hover:underline" href="#">იაგო ხვიჩია</a>
+                    <div class="flex space-x-1 items-center text-mainYellow text-xl ">
+                        <span>1500</span>
+                        <img src="./assets/GED-yellow.svg" alt="GED coin">
+                    </div>
+                </div>
+                <hr class="bg-grayOpacityFull bg-opacity-30 ">
+                <div class="flex justify-between items-center py-6 px-7">
+                    <img class="p-[2px] rounded-full border border-grayOpacityFull" src="./assets/profile-3.png" alt="profile picture">
+                    <a class="text-lg  hover:underline" href="#">იაგო ხვიჩია</a>
+                    <div class="flex space-x-1 items-center text-mainYellow text-xl ">
+                        <span>1500</span>
+                        <img src="./assets/GED-yellow.svg" alt="GED coin">
+                    </div>
+                </div>
+                <hr class="bg-grayOpacityFull bg-opacity-30 ">
+                <div class="flex justify-between items-center py-6 px-7">
+                    <img class="p-[2px] rounded-full border border-grayOpacityFull" src="./assets/profile-4.png" alt="profile picture">
+                    <a class="text-lg  hover:underline" href="#">იაგო ხვიჩია</a>
+                    <div class="flex space-x-1 items-center text-mainYellow text-xl ">
+                        <span>1500</span>
+                        <img src="./assets/GED-yellow.svg" alt="GED coin">
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <section class="container mx-auto my-7 p-6 bg-[#F8F8F8] rounded-xl">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-3 mb-5 text-2xl ">
+                <img src="./assets/news.svg" alt="news icon">
+                <h3>სიახლეები</h3>
+            </div>
+            <a class=" size-lg hover:underline" href="#">ნახე მეტი</a>
+        </div> 
+        <div class="grid grid-cols-1 gap-3 xl:grid-cols-2">
+            <div class="flex items-center flex-col py-7 px-4 rounded-xl bg-white space-x-3 md:flex-row">
+                <div class="aspect-square w-72 "><img class="max-w-full" src="./assets/news-img.png" alt="news image"></div>
+                <div class="max-w-72 xl:w-72">
+                    <h3 class="text-xl font-medium mt-4 md:mt-0">გირჩი პარლამენტში შედის</h3>
+                    <p class="text-sm mt-4 mb-6">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <img src="./assets/clock.svg" alt="clock">
+                            <span class="text-sm">2 მარტი 2022</span>
+                        </div>
+                        <a class="text-sm hover:underline" href="#">დეტალურად</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center flex-col py-7 px-4 rounded-xl bg-white space-x-3 md:flex-row">
+                <div class="aspect-square w-72 "><img class="max-w-full" src="./assets/news-img.png" alt="news image"></div>
+                <div class="max-w-72 xl:w-72">
+                    <h3 class="text-xl font-medium mt-4 md:mt-0">“პირველად ომი რუსეთმა დაიწყო” - იაგო ხვიჩია</h3>
+                    <p class="text-sm mt-4 mb-6">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <img src="./assets/clock.svg" alt="clock">
+                            <span class="text-sm">2 მარტი 2022</span>
+                        </div>
+                        <a class="text-sm hover:underline" href="#">დეტალურად</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="container mx-auto mb-2 bg-[#F8F8F8] rounded-xl p-4 grid grid-cols-1 gap-4 space-y-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-3 mb-5 text-2xl ">
+                <img src="./assets/projects.svg" alt="projects icon">
+                <h3>პროექტები</h3>
+            </div>
+            <a class=" size-lg hover:underline" href="#">ნახე მეტი</a>
+        </div> 
+        <div class="bg-white rounded-xl py-4 px-5 flex flex-col items-center justify-center lg:justify-between  space-x-4 lg:flex-row">
+            <img src="./assets/projects-img.png" alt="projects image">
+            <div class=" lg:max-w-md">
+                <h3 class="text-[22px] font-bold text-center mt-4 lg:text-left lg:mt-0">კანაფის მოყვარულნი</h3>
+                <p class="mt-4 mb-5">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                <hr class="bg-grayOpacityFull bg-opacity-20 mb-5">
+                <div class="flex space-x-4 justify-center lg:justify-start">
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <button class="bg-lightGreen text-white py-4 px-12 rounded-xl duration-200 focus:outline-none hover:bg-darkGreen">ხელისმოწერა</button>
+                <button class="bg-white py-4 px-[70px] rounded-xl border border-grayOpacityFull duration-200 focus:outline-none hover:bg-grayOpacityFull hover:text-white">ხელისმოწერა</button>
+            </div>
+            <div class="flex space-x-1 mt-2 lg:mt-0">
+                <img src="./assets/vector-ascend.svg" alt="vector ascend">
+                <span class="text-3xl">2</span>
+            </div>
+        </div>
+        <div class="bg-white rounded-xl py-4 px-5 flex flex-col items-center justify-center lg:justify-between  space-x-4 lg:flex-row">
+            <img src="./assets/projects-img.png" alt="projects image">
+            <div class=" lg:max-w-md">
+                <h3 class="text-[22px] font-bold text-center mt-4 lg:text-left lg:mt-0">კანაფის მოყვარულნი</h3>
+                <p class="mt-4 mb-5">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                <hr class="bg-grayOpacityFull bg-opacity-20 mb-5">
+                <div class="flex space-x-4 justify-center lg:justify-start">
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <button class="bg-lightGreen text-white py-4 px-12 rounded-xl duration-200 focus:outline-none hover:bg-darkGreen">ხელისმოწერა</button>
+                <button class="bg-white py-4 px-[70px] rounded-xl border border-grayOpacityFull duration-200 focus:outline-none hover:bg-grayOpacityFull hover:text-white">ხელისმოწერა</button>
+            </div>
+            <div class="flex space-x-1 mt-2 lg:mt-0">
+                <img src="./assets/vector-descend.svg" alt="vector descend">
+                <span class="text-3xl">1</span>
+            </div>
+        </div>
+        <div class="bg-white rounded-xl py-4 px-5 flex flex-col items-center justify-center lg:justify-between  space-x-4 lg:flex-row">
+            <img src="./assets/projects-img.png" alt="projects image">
+            <div class=" lg:max-w-md">
+                <h3 class="text-[22px] font-bold text-center mt-4 lg:text-left lg:mt-0">კანაფის მოყვარულნი</h3>
+                <p class="mt-4 mb-5">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                <hr class="bg-grayOpacityFull bg-opacity-20 mb-5">
+                <div class="flex space-x-4 justify-center lg:justify-start">
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <button class="bg-lightGreen text-white py-4 px-12 rounded-xl duration-200 focus:outline-none hover:bg-darkGreen">ხელისმოწერა</button>
+                <button class="bg-white py-4 px-[70px] rounded-xl border border-grayOpacityFull duration-200 focus:outline-none hover:bg-grayOpacityFull hover:text-white">ხელისმოწერა</button>
+            </div>
+            <div class="flex space-x-1 mt-2 lg:mt-0">
+                <img src="./assets/vector-normal.svg" alt="vector normal">
+                <span class="text-3xl">0</span>
+            </div>
+        </div>
+        <div class="bg-white rounded-xl py-4 px-5 flex flex-col items-center justify-center lg:justify-between  space-x-4 lg:flex-row">
+            <img src="./assets/projects-img.png" alt="projects image">
+            <div class=" lg:max-w-md">
+                <h3 class="text-[22px] font-bold text-center mt-4 lg:text-left lg:mt-0">კანაფის მოყვარულნი</h3>
+                <p class="mt-4 mb-5">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                <hr class="bg-grayOpacityFull bg-opacity-20 mb-5">
+                <div class="flex space-x-4 justify-center lg:justify-start">
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <button class="bg-lightGreen text-white py-4 px-12 rounded-xl duration-200 focus:outline-none hover:bg-darkGreen">ხელისმოწერა</button>
+                <button class="bg-white py-4 px-[70px] rounded-xl border border-grayOpacityFull duration-200 focus:outline-none hover:bg-grayOpacityFull hover:text-white">ხელისმოწერა</button>
+            </div>
+            <div class="flex space-x-1 mt-2 lg:mt-0">
+                <img src="./assets/vector-ascend.svg" alt="vector ascend">
+                <span class="text-3xl">2</span>
+            </div>
+        </div>
+        <div class="bg-white rounded-xl py-4 px-5 flex flex-col items-center justify-center lg:justify-between  space-x-4 lg:flex-row">
+            <img src="./assets/projects-img.png" alt="projects image">
+            <div class=" lg:max-w-md">
+                <h3 class="text-[22px] font-bold text-center mt-4 lg:text-left lg:mt-0">კანაფის მოყვარულნი</h3>
+                <p class="mt-4 mb-5">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                <hr class="bg-grayOpacityFull bg-opacity-20 mb-5">
+                <div class="flex space-x-4 justify-center lg:justify-start">
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <button class="bg-lightGreen text-white py-4 px-12 rounded-xl duration-200 focus:outline-none hover:bg-darkGreen">ხელისმოწერა</button>
+                <button class="bg-white py-4 px-[70px] rounded-xl border border-grayOpacityFull duration-200 focus:outline-none hover:bg-grayOpacityFull hover:text-white">ხელისმოწერა</button>
+            </div>
+            <div class="flex space-x-1 mt-2 lg:mt-0">
+                <img src="./assets/vector-descend.svg" alt="vector descend">
+                <span class="text-3xl">1</span>
+            </div>
+        </div>
+        <div class="bg-white rounded-xl py-4 px-5 flex flex-col items-center justify-center lg:justify-between  space-x-4 lg:flex-row">
+            <img src="./assets/projects-img.png" alt="projects image">
+            <div class=" lg:max-w-md">
+                <h3 class="text-[22px] font-bold text-center mt-4 lg:text-left lg:mt-0">კანაფის მოყვარულნი</h3>
+                <p class="mt-4 mb-5">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                <hr class="bg-grayOpacityFull bg-opacity-20 mb-5">
+                <div class="flex space-x-4 justify-center lg:justify-start">
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                    <div class="flex flex-col p-2 bg-[#FDFDFD] space-y-2 pb-3 rounded-xl">
+                        <span class="text-xs">ხელმომწერი <br> მომხრე</span>
+                        <span class="text-2xl">20.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <button class="bg-lightGreen text-white py-4 px-12 rounded-xl duration-200 focus:outline-none hover:bg-darkGreen">ხელისმოწერა</button>
+                <button class="bg-white py-4 px-[70px] rounded-xl border border-grayOpacityFull duration-200 focus:outline-none hover:bg-grayOpacityFull hover:text-white">ხელისმოწერა</button>
+            </div>
+            <div class="flex space-x-1 mt-2 lg:mt-0">
+                <img src="./assets/vector-ascend.svg" alt="vector ascend">
+                <span class="text-3xl">2</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="px-10 pt-6 pb-8 bg-white md:px-40">
+        <div class="flex flex-col justify-between items-center md:flex-row">
+            <a href="index.html" class="flex items-center">
+                <img class="w-9 h-11" src="./assets/logo.png" alt="logo">
+                <h1 class="text-darkGreen font-bold ml-3">გირჩი</h1>
+            </a>
+            <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                <a href="mailto:Info@girchi.com" class="flex items-center space-x-1">
+                    <img src="./assets/mail.svg" alt="mail icon">
+                    <span>Info@girchi.com</span>
+                </a>
+                <a href="#"><img src="./assets/facebook.svg" alt="facebook icon"></a>
+                <a href="#"><img src="./assets/twitter.svg" alt="twitter icon"></a>
+                <a href="#"><img src="./assets/youtube.svg" alt="youtube icon"></a>
+            </div>
+        </div>
+        <nav class="pt-7 pb-3">
+            <ul class="flex flex-col items-center space-x-2 justify-center md:justify-between lg:flex-row">
+                <li><a class="text-xs whitespace-nowrap hover:underline" href="#">ლეგალიზაცია</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline" href="#">თავისუფალი განათლება</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline" href="#">ნამდვილი თავდაცვა</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline" href="#">ძალაუფლება ხალხს</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline" href="#">ჩვენი ხედვა</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline" href="#">ჩვენი ამბავი</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline" href="#">როგორი ქვეყანა გვინდა</a></li>
+            </ul>
+        </nav>
+        <hr class="bg-grayOpacityFull bg-opacity-30 h-[2px] mb-3">
+        <span class="text-xs">ყველა საავტორო უფლების თავზეც გავიარეთ.გირჩი</span>
+    </footer>
+    <script src="./src/index.js"></script>
+</body>
+</html>

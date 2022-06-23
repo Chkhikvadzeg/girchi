@@ -1,0 +1,37 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.hamburger-line {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all .3s ease-in-out;
+    background-color: #2fa837;
+    border-radius: 5px;
+}
+
+.hamburger.active .hamburger-line:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .hamburger-line:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+}
+
+.header-nav {
+    transition: transform .3s ease-in-out;
+}
+
+.header-nav.active {
+    transform: scaleY(1);
+    opacity: 1;
+    display: block;
+}
