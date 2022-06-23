@@ -1472,10 +1472,6 @@ video {
   .lg\:opacity-100 {
     opacity: 1;
   }
-
-  .lg\:first-letter\:pr-0::first-letter {
-    padding-right: 0px;
-  }
 }
 
 @media (min-width: 1280px) {
