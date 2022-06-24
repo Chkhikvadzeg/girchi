@@ -18,7 +18,7 @@ module.exports = {
         'mainRed': '#f10000',
       },
       gridTemplateColumns: {
-        'dashboard': 'minmax(875px, 1fr) minmax(400px, 1fr)',
+        'dashboard': 'auto 400px',
         'cards': 'repeat(2, minmax(300px, 407px))',
       },
     },
