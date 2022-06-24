@@ -35,3 +35,9 @@
     opacity: 1;
     display: block;
 }
+
+.social-link:hover .social-icon,
+.social-link:hover .social-icon circle,
+.social-link:hover .social-icon path{
+    stroke: #2fa837;
+}
