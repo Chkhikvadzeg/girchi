@@ -36,9 +36,11 @@
     display: block;
 }
 
-.dropdown {
-
-}
+@layer base {
+    html {
+        font-family: 'FiraGO', sans-serif;
+    }
+  }
 
 .dropdown-img.active {
     transform: rotate(-180deg);

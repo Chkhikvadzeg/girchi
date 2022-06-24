@@ -6,6 +6,9 @@ module.exports = {
   theme: {
     
     extend: {
+      fontFamily: {
+        'Georgian': ['FiraGO', 'sans-serif']
+      },
       colors: {
         'veryLightGreen': '#dfffe4',
         'lightGreen': '#2fa837',
