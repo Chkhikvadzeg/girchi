@@ -1,14 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './**/*.{html,js}',
+    './html/**/*.{html,js}',
   ],
   theme: {
     
     extend: {
-      fontFamily: {
-        'Georgian': ['FiraGO', 'sans-serif']
-      },
       colors: {
         'veryLightGreen': '#dfffe4',
         'lightGreen': '#2fa837',
