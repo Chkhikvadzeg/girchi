@@ -1298,7 +1298,10 @@ video {
 
 .social-link:hover .social-icon,
 .social-link:hover .social-icon circle,
-.social-link:hover .social-icon path{
+.social-link:hover .social-icon path,
+.social-link:focus .social-icon,
+.social-link:focus .social-icon circle,
+.social-link:focus .social-icon path{
   stroke: #2fa837;
 }
 
