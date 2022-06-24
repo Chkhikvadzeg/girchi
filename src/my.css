@@ -36,6 +36,25 @@
     display: block;
 }
 
+.dropdown {
+
+}
+
+.dropdown-img.active {
+    transform: rotate(-180deg);
+}
+
+.dropdown-content {
+    transition: all .3s ease-in-out;
+}
+
+.dropdown.active .dropdown-content {
+    opacity: 1;
+    transform: scaleY(1);
+    max-height: 1000px;
+    display: block;
+}
+
 .social-link:hover .social-icon,
 .social-link:hover .social-icon circle,
 .social-link:hover .social-icon path,
@@ -44,3 +63,5 @@
 .social-link:focus .social-icon path{
     stroke: #2fa837;
 }
+
+
