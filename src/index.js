@@ -13,21 +13,11 @@ hamburger.addEventListener("click", () => {
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     headerNav.classList.remove("active");
+    dropdown.forEach(e => e.classList.remove("active"));
 }));
 
 dropdownImage.forEach(n => n.addEventListener("click", () => {
     n.classList.toggle("active");
     n.parentElement.parentElement.classList.toggle("active");
 }));
-
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    n.parentElement.parentElement.classList.remove("active");
-}))
-
-// if(dropdown.forEach(e => e.classList.contains("active"))){
-//     document.querySelector("body").addEventListener("click", () => {
-//         dropdown.forEach(e => e.classList.remove("active"));
-//     })
-// }
-
 
