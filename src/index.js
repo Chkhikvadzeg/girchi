@@ -5,6 +5,11 @@ const dropdown = document.querySelectorAll(".dropdown");
 const dropdownImage = document.querySelectorAll(".dropdown-img");
 const dropdownContent = document.querySelector(".dropdown-content");
 
+const leftArrow = document.querySelector(".left-arrow");
+const rightArrow = document.querySelector(".right-arrow");
+const moreProjects = document.querySelector(".projects-more");
+const projectItem = document.querySelector(".project-item").getBoundingClientRect().width;
+
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     headerNav.classList.toggle("active");
@@ -21,3 +26,12 @@ dropdownImage.forEach(n => n.addEventListener("click", () => {
     n.parentElement.parentElement.classList.toggle("active");
 }));
 
+
+
+leftArrow.addEventListener("click", () => {
+    moreProjects.scrollLeft -= projectItem;
+});
+
+rightArrow.addEventListener("click", () => {
+    moreProjects.scrollLeft += projectItem;
+});

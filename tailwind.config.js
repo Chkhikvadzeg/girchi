@@ -21,6 +21,8 @@ module.exports = {
       gridTemplateColumns: {
         'dashboard': 'auto 400px',
         'cards': 'repeat(2, minmax(300px, 1fr))',
+        'projects': '1fr 2fr 1fr',
+        'projectsMore': 'repeat(10, 302px)',
       },
     },
   },
