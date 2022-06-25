@@ -20,7 +20,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         'dashboard': 'auto 400px',
-        'cards': 'repeat(2, minmax(300px, 407px))',
+        'cards': 'repeat(2, minmax(300px, 1fr))',
       },
     },
   },
