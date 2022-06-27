@@ -17,7 +17,8 @@ module.exports = {
         'lightBlue': '#e2eeff',
         'mainOrange': '#ffeee6',
         'mainRed': '#f10000',
-        'newsGray': 'rgba(50, 57, 77, 0.05)'
+        'newsGray': 'rgba(50, 57, 77, 0.05)',
+        'newsTags': '#0A2FB9',
       },
       gridTemplateColumns: {
         'dashboard': 'auto 400px',
