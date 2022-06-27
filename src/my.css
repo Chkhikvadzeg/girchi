@@ -4,6 +4,12 @@
 
 @tailwind utilities;
 
+@layer base {
+    html {
+        font-family: 'FiraGO', sans-serif;
+    }
+}
+
 .hamburger-line {
     display: block;
     width: 20px;
@@ -36,12 +42,6 @@
     display: block;
 }
 
-@layer base {
-    html {
-        font-family: 'FiraGO', sans-serif;
-    }
-  }
-
 .dropdown-img.active {
     transform: rotate(-180deg);
 }
@@ -66,4 +66,67 @@
     stroke: #2fa837;
 }
 
+.projects-page.active {
+    background: #32394d;
+    color: white;
+}
 
+.news-dropdown.active::before{
+    width: 4px;
+}
+
+.news-dropdown.active ul {
+    transition: all .3s ease-in-out;
+    display: flex;
+    transform: scaleY(1);
+}
+
+.news-dropdown-img {
+    transition: all .3s ease-in-out;
+}
+
+.news-dropdown-img.active {
+    transform: rotate(-180deg);
+}
+
+
+.news-hamburger-line {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all .3s ease-in-out;
+    background-color: #32394d;
+    border-radius: 5px;
+}
+
+.news-hamburger.active .news-hamburger-line:nth-child(2){
+    opacity: 0;
+}
+
+.news-hamburger.active .news-hamburger-line:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.news-hamburger.active .news-hamburger-line:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+}
+
+.nav-dropdown {
+    transition: transform .3s ease-in-out;
+}
+
+
+.nav-dropdown.active .nav-hidden {
+    transform: scaleY(1);
+    opacity: 1;
+    display: block;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-hidden {
+        transform: scaleY(1);
+        opacity: 1;
+        display: block;
+    }
+}

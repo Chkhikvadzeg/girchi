@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girchi | გირჩი</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.svg">
+    <link href="https://free.bboxtype.com/embedfonts/?family=FiraGO:200,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-[#E5E5E5] text-grayOpacityFull text-sm lg:text-base">
+    <header class="bg-white">
+        <!-- HEADER TOP -->
+        <div class="container px-6 mx-auto pt-5 pb-4 md:px-16">
+            <div class="flex justify-between items-center pb-5 border-b-2 border-b-lightGreen">
+                <a href="../index.html" class="flex items-center">
+                    <img class="w-6 md:w-10" src="../assets/logo.png" alt="logo">
+                    <h1 class="text-lightGreen text-xl font-bold ml-3 md:text-2xl">გირჩი</h1>
+                </a>
+                <div class="flex items-center text-white">
+                    <button class="hamburger mr-3 lg:hidden">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <a href="#" class="hidden py-3 px-4 mr-1 rounded-xl text-xs lg:text-sm text-white bg-lightGreen duration-200 hover:bg-darkGreen md:block">შესვლა</a>
+                    <a href="#" class="hidden py-3 px-4 rounded-xl text-xs lg:text-sm text-white bg-mainYellow duration-200 hover:bg-opacity-80 md:block">რეგისტრაცია</a>   
+                </div>
+            </div>
+            <!-- HEADER BOTTOM -->
+            <div class="relative flex-col justify-between pt-3 lg:flex xl:flex-row ">
+                <nav class="header-nav scale-y-0 pl-4 hidden opacity-0 absolute left-0 top-0 transition-all w-full bg-white shadow-md z-50 lg:shadow-none lg:w-auto lg:pl-0 lg:scale-100 lg:opacity-100 lg:block lg:static">
+                    <div class="flex flex-col items-left  text-white mt-2">
+                        <a href="#" class="nav-link py-3 max-w-fit mb-3 px-6 my-1 rounded-lg text-xs lg:text-sm text-white bg-lightGreen duration-200 hover:bg-darkGreen md:hidden">შესვლა</a>
+                        <a href="#" class="nav-link py-3 max-w-fit mb-3 px-6 rounded-lg text-xs lg:text-sm text-white bg-mainYellow duration-200 hover:bg-opacity-80 md:hidden">რეგისტრაცია</a>
+                    </div>
+                    <ul class="flex flex-col items-left justify-between lg:space-x-6 lg:items-center lg:flex-row">
+                        <li class="dropdown max-w-fit mb-3 relative flex flex-col items-center mt-2 lg:mt-0">
+                            <div class="flex items-center">
+                                <a class="nav-link whitespace-nowrap hover:underline" href="#">ჩვენ შესახებ</a>
+                                <img class="dropdown-img peer p-2 duration-300 cursor-pointer " src="../assets/vector.svg" alt="vector">
+                            </div>
+                            <ul class="dropdown-content relative hidden max-h-0 w-fit min-w-[120%] left-[25%] z-10 top-[120%] bg-white text-[15px] lg:shadow-md lg:p-3 opacity-0 scale-y-0 transition-all duration-300 lg:left-0  lg:absolute">
+                                <li class="py-1 hover:underline"><a class="nav-link" href="#">ჩვენ შესახებ 1</a></li>
+                                <li class="py-1 hover:underline"><a class="nav-link" href="#">ჩვენ შესახებ 2</a></li>
+                                <li class="py-1 hover:underline"><a class="nav-link" href="#">ჩვენ შესახებ 3</a></li>
+                                <li class="py-1 hover:underline"><a class="nav-link" href="#">ჩვენ შესახებ 4</a></li>
+                                <li class="py-1 hover:underline"><a class="nav-link" href="#">ჩვენ შესახებ 5</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown max-w-fit mb-3 relative flex flex-col items-center my-2 lg:my-0 lg:mt-0">
+                            <div class="flex items-center">
+                                <a class="nav-link whitespace-nowrap hover:underline" href="../html/projects.html">პროექტები</a>
+                                <img class="dropdown-img peer p-2 duration-300 cursor-pointer " src="../assets/vector.svg" alt="vector">
+                            </div>
+                            <ul class="dropdown-content relative hidden max-h-0 w-fit min-w-[120%] left-[25%] z-10 top-[120%] bg-white text-[15px] lg:shadow-md lg:p-3 opacity-0 scale-y-0 transition-all duration-300 lg:left-0 lg:absolute">
+                                <li class="py-1 hover:underline"><a class="nav-link" href="#">პროექტები 1</a></li>
+                                <li class="py-1 hover:underline"><a class="nav-link" href="#">პროექტები 2</a></li>
+                                <li class="py-1 hover:underline"><a class="nav-link" href="#">პროექტები 3</a></li>
+                                <li class="py-1 hover:underline"><a class="nav-link" href="#">პროექტები 4</a></li>
+                                <li class="py-1 hover:underline"><a class="nav-link" href="#">პროექტები 5</a></li>
+                            </ul>
+                        </li>
+                    <li>
+                        <a href="#" class="py-[11px] inline-block px-5 mb-2 text-white rounded-lg text-sm bg-grayOpacityFull duration-200 hover:bg-opacity-90">დაგვაფინანსე</a>
+                    </li>
+                    </ul>
+                </nav>
+                <div class="flex items-center space-x-4 mt-4 xl:mt-0">
+                    <form class="group w-[200px] h-10 pl-3 pr-1 rounded-lg flex justify-between border-2 border-grayOpacityFull focus-within:border-darkGreen">
+                        <input class="w-full focus:outline-none" type="search" name="search" id="search" placeholder="ძებნა...">
+                        <button type="submit"><img src="../assets/search.svg" alt="search icon"></button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        
+    </header>
+
+    <main class="container nav-dropdown mx-auto py-9 px-5 bg-white rounded-xl mt-8 mb-6">
+        <div class="flex items-center justify-between mb-5 text-xl lg:text-2xl ">
+            <div class="flex items-center space-x-3">
+                <img src="../assets/news.svg" alt="news icon">
+                <h3>სიახლეები</h3>
+            </div>
+            <button class="news-hamburger mr-3 lg:hidden">
+                <span class="news-hamburger-line"></span>
+                <span class="news-hamburger-line"></span>
+                <span class="news-hamburger-line"></span>
+            </button>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-news gap-x-6">
+            <div class="nav-hidden hidden scale-y-0 lg:block">
+                <ul class="mb-8">
+                    <li class="news-dropdown relative p-5 text-[15px] rounded-t-lg bg-grayOpacityFull bg-opacity-5 duration-300 hover:bg-opacity-10 before:duration-300  before:w-0 before:h-full before:bg-darkGreen before:absolute before:left-0 before:top-0 hover:before:w-1">
+                        <div class=" flex space-x-3 items-center">
+                            <a class="font-medium" href="#">ჩვენ შესახებ</a>
+                            <img class="news-dropdown-img w-3 cursor-pointer py-2" src="../assets/vector.svg" alt="vector">
+                        </div>
+                        <ul class="hidden scaleY-0 flex-col space-y-3 px-2 pt-5">
+                            <li class="hover:text-darkGreen "><a href="#">გირჩის ისტორია</a></li>
+                            <li class="hover:text-darkGreen "><a href="#">გირჩის კონსტიტუცია</a></li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="news-dropdown relative p-5 text-[15px] bg-grayOpacityFull bg-opacity-5 duration-300 hover:bg-opacity-1 before:duration-300 before:w-0 before:h-full before:bg-darkGreen before:absolute before:left-0 before:top-0 hover:before:w-1">
+                        <div class=" flex space-x-3 items-center ">
+                            <a class="font-medium" href="./projects.html">პროექტები</a>
+                            <img class="news-dropdown-img w-3 cursor-pointer py-2" src="../assets/vector.svg" alt="vector">
+                        </div>
+                        <ul class="hidden scaleY-0 flex-col space-y-3 px-2 pt-5">
+                            <li class="hover:text-darkGreen "><a href="#">სავალდებულო ჯარის გაუქმება</a></li>
+                            <li class="hover:text-darkGreen "><a href="#">მულტისავალუტო სისტემა</a></li>
+                            <li class="hover:text-darkGreen "><a href="#">ბიუროკრატიის გაცილება</a></li>
+                            <li class="hover:text-darkGreen "><a href="#">უნივერსალური ბაზისური შემოსავალი</a></li>
+                            <li class="hover:text-darkGreen "><a href="#">მიწა-წყლისა და ქვეყნის დაბრუნება</a></li>
+                            <li class="hover:text-darkGreen "><a href="#">ამნისტია</a></li>
+                            <li class="hover:text-darkGreen "><a href="#">შერიფები</a></li>
+                            <li class="hover:text-darkGreen "><a href="#">ტკივილი</a></li>
+                            <li class="hover:text-darkGreen "><a href="#">იარაღის ლეგალიზაცია</a></li>
+                            <li class="hover:text-darkGreen "><a href="#">კანაფის საზოგადოება</a></li>
+                        </ul>
+                    </li>
+                    <hr>
+                </ul>
+                <div class="px-3 rounded-xl bg-newsGray">
+                    <h4 class="py-4 font-medium opacity-80 text-center">ტეგები</h4>
+                    <hr>
+                    <ul class="flex flex-col space-y-3 py-4 text-darkGreen text-xs lg:text-sm">
+                        <li class="duration-300 hover:text-black hover:underline">
+                            <a href="#"># პროცესი</a>
+                        </li>
+                        <li class="duration-300 hover:text-black hover:underline">
+                            <a href="#"># თავისუფალი ბაზარი</a>
+                        </li>
+                        <li class="duration-300 hover:text-black hover:underline">
+                            <a href="#"># გირჩის სკოლა</a>
+                        </li>
+                        <li class="duration-300 hover:text-black hover:underline">
+                            <a href="#"># თარგმანები</a>
+                        </li>
+                        <li class="duration-300 hover:text-black hover:underline">
+                            <a href="#"># გირჩის ბლოგი</a>
+                        </li>
+                        <li class="duration-300 hover:text-black hover:underline">
+                            <a href="#"># გამოხატვის უფლება</a>
+                        </li>
+                        <li class="duration-300 hover:text-black hover:underline">
+                            <a href="#"># გირჩი</a>
+                        </li>
+                        <li class="duration-300 hover:text-black hover:underline">
+                            <a href="#"># პირადი ცხოვრება</a>
+                        </li>
+                        <li class="duration-300 hover:text-black hover:underline">
+                            <a href="#"># საკონსტიტუციო სასამართლო</a>
+                        </li>
+                        <li class="duration-300 hover:text-black hover:underline">
+                            <a href="#"># არჩევნები</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-5 mt-5 md:grid-cols-2 lg:grid-cols-3 lg:mt-0">
+                <div class="flex items-center flex-col py-2 px-3 rounded-xl bg-white space-y-3">
+                    <img class="max-w-full rounded-xl" src="../assets/news-img-1.png" alt="news image">
+                    <div>
+                        <a href="#" class="text-md block max-w-fit mb-3 m-auto font-medium hover:text-lightGreen lg:text-xl">გირჩი პარლამენტში შედის</a>
+                        <p class="text-xs lg:text-sm mb-6">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <img src="../assets/clock.svg" alt="clock">
+                                <span class="text-xs lg:text-sm">2 მარტი 2022</span>
+                            </div>
+                            <a class="text-xs lg:text-sm hover:underline" href="#">დეტალურად</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center flex-col py-2 px-3 rounded-xl bg-white space-y-3">
+                    <img class="max-w-full rounded-xl" src="../assets/news-img-1.png" alt="news image">
+                    <div>
+                        <a href="#" class="text-md block max-w-fit mb-3 m-auto font-medium hover:text-lightGreen lg:text-xl">გირჩი პარლამენტში შედის</a>
+                        <p class="text-xs lg:text-sm mb-6">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <img src="../assets/clock.svg" alt="clock">
+                                <span class="text-xs lg:text-sm">2 მარტი 2022</span>
+                            </div>
+                            <a class="text-xs lg:text-sm hover:underline" href="#">დეტალურად</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center flex-col py-2 px-3 rounded-xl bg-white space-y-3">
+                    <img class="max-w-full rounded-xl" src="../assets/news-img-1.png" alt="news image">
+                    <div>
+                        <a href="#" class="text-md block max-w-fit mb-3 m-auto font-medium hover:text-lightGreen lg:text-xl">გირჩი პარლამენტში შედის</a>
+                        <p class="text-xs lg:text-sm mb-6">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <img src="../assets/clock.svg" alt="clock">
+                                <span class="text-xs lg:text-sm">2 მარტი 2022</span>
+                            </div>
+                            <a class="text-xs lg:text-sm hover:underline" href="#">დეტალურად</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center flex-col py-2 px-3 rounded-xl bg-white space-y-3">
+                    <img class="max-w-full rounded-xl" src="../assets/news-img-1.png" alt="news image">
+                    <div>
+                        <a href="#" class="text-md block max-w-fit mb-3 m-auto font-medium hover:text-lightGreen lg:text-xl">გირჩი პარლამენტში შედის</a>
+                        <p class="text-xs lg:text-sm mb-6">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <img src="../assets/clock.svg" alt="clock">
+                                <span class="text-xs lg:text-sm">2 მარტი 2022</span>
+                            </div>
+                            <a class="text-xs lg:text-sm hover:underline" href="#">დეტალურად</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center flex-col py-2 px-3 rounded-xl bg-white space-y-3">
+                    <img class="max-w-full rounded-xl" src="../assets/news-img-1.png" alt="news image">
+                    <div>
+                        <a href="#" class="text-md block max-w-fit mb-3 m-auto font-medium hover:text-lightGreen lg:text-xl">გირჩი პარლამენტში შედის</a>
+                        <p class="text-xs lg:text-sm mb-6">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <img src="../assets/clock.svg" alt="clock">
+                                <span class="text-xs lg:text-sm">2 მარტი 2022</span>
+                            </div>
+                            <a class="text-xs lg:text-sm hover:underline" href="#">დეტალურად</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center flex-col py-2 px-3 rounded-xl bg-white space-y-3">
+                    <img class="max-w-full rounded-xl" src="../assets/news-img-1.png" alt="news image">
+                    <div>
+                        <a href="#" class="text-md block max-w-fit mb-3 m-auto font-medium hover:text-lightGreen lg:text-xl">გირჩი პარლამენტში შედის</a>
+                        <p class="text-xs lg:text-sm mb-6">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <img src="../assets/clock.svg" alt="clock">
+                                <span class="text-xs lg:text-sm">2 მარტი 2022</span>
+                            </div>
+                            <a class="text-xs lg:text-sm hover:underline" href="#">დეტალურად</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center flex-col py-2 px-3 rounded-xl bg-white space-y-3">
+                    <img class="max-w-full rounded-xl" src="../assets/news-img-1.png" alt="news image">
+                    <div>
+                        <a href="#" class="text-md block max-w-fit mb-3 m-auto font-medium hover:text-lightGreen lg:text-xl">გირჩი პარლამენტში შედის</a>
+                        <p class="text-xs lg:text-sm mb-6">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <img src="../assets/clock.svg" alt="clock">
+                                <span class="text-xs lg:text-sm">2 მარტი 2022</span>
+                            </div>
+                            <a class="text-xs lg:text-sm hover:underline" href="#">დეტალურად</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center flex-col py-2 px-3 rounded-xl bg-white space-y-3">
+                    <img class="max-w-full rounded-xl" src="../assets/news-img-1.png" alt="news image">
+                    <div>
+                        <a href="#" class="text-md block max-w-fit mb-3 m-auto font-medium hover:text-lightGreen lg:text-xl">გირჩი პარლამენტში შედის</a>
+                        <p class="text-xs lg:text-sm mb-6">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <img src="../assets/clock.svg" alt="clock">
+                                <span class="text-xs lg:text-sm">2 მარტი 2022</span>
+                            </div>
+                            <a class="text-xs lg:text-sm hover:underline" href="#">დეტალურად</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center flex-col py-2 px-3 rounded-xl bg-white space-y-3">
+                    <img class="max-w-full rounded-xl" src="../assets/news-img-1.png" alt="news image">
+                    <div>
+                        <a href="#" class="text-md block max-w-fit mb-3 m-auto font-medium hover:text-lightGreen lg:text-xl">გირჩი პარლამენტში შედის</a>
+                        <p class="text-xs lg:text-sm mb-6">თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.თვლი რომ ამინისტიის პირობები ზედმეტად მკაცრია და ამ ყველაფრის შეცვლის დროა, შემოგვიერთდი მოაწერე ხელი პეტიციას და ერთად ჩავერთოთ ამ ბრძოლაში.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <img src="../assets/clock.svg" alt="clock">
+                                <span class="text-xs lg:text-sm">2 მარტი 2022</span>
+                            </div>
+                            <a class="text-xs lg:text-sm hover:underline" href="#">დეტალურად</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="px-10 pt-6 pb-8 bg-white md:px-48">
+        <div class="flex flex-col justify-between items-center md:flex-row">
+            <a href="../index.html" class="flex items-center">
+                <img class="w-9 h-11" src="../assets/logo.png" alt="logo">
+                <h1 class="text-lightGreen font-bold ml-3">გირჩი</h1>
+            </a>
+            <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                <a href="mailto:Info@girchi.com" class="social-link flex items-center space-x-1">
+                    <svg class="social-icon" width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.9">
+                        <path d="M30.2881 6.00041H7.63207C6.73207 6.00041 6 6.73275 6 7.63248V20.661C6 21.5608 6.7318 22.2931 7.63207 22.2931H30.2881C31.1881 22.2931 31.9201 21.5608 31.9201 20.661V7.63179C31.9201 6.73179 31.1883 6 30.2881 6V6.00041ZM23.9728 13.3513L30.9485 7.51789C30.955 7.55539 30.9601 7.59343 30.9601 7.63281V20.6209L23.9728 13.3513ZM6.96021 20.6212V7.63309C6.96021 7.59345 6.9653 7.55542 6.97172 7.51792L13.9475 13.3513L6.96021 20.6212ZM7.80233 6.9611H30.1189L19.2853 16.0201C19.0975 16.1749 18.8249 16.1749 18.639 16.0227L7.80233 6.9611ZM7.63224 21.333C7.62447 21.333 7.61724 21.3311 7.60947 21.3305L14.6854 13.968L18.0258 16.7612C18.2958 16.9835 18.6272 17.095 18.959 17.095C19.2914 17.095 19.6249 16.9827 19.8976 16.7591L23.2346 13.9686L30.3111 21.3304C30.3034 21.3307 30.2961 21.3328 30.2884 21.3328L7.63224 21.333Z" fill="#32394D"/>
+                        </g>
+                        </svg>
+                        
+                    <span class="hover:underline">Info@girchi.com</span>
+                </a>
+                <a class="social-link"  href="#"><svg class="social-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.9">
+                    <circle cx="16" cy="16" r="15.25" stroke="#32394D" stroke-width="1.5"/>
+                    <path d="M20.5 8.5H18.25C17.2554 8.5 16.3016 8.89509 15.5983 9.59835C14.8951 10.3016 14.5 11.2554 14.5 12.25V14.5H12.25V17.5H14.5V23.5H17.5V17.5H19.75L20.5 14.5H17.5V12.25C17.5 12.0511 17.579 11.8603 17.7197 11.7197C17.8603 11.579 18.0511 11.5 18.25 11.5H20.5V8.5Z" stroke="#32394D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    </svg>
+                    </a>
+                <a class="social-link"  href="#"><svg class="social-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.9">
+                    <circle cx="16" cy="16" r="15.25" stroke="#32394D" stroke-width="1.5"/>
+                    <path d="M24.25 9.24973C23.5318 9.75634 22.7366 10.1438 21.895 10.3972C21.4433 9.87786 20.843 9.50975 20.1753 9.34267C19.5076 9.1756 18.8046 9.21763 18.1616 9.46307C17.5185 9.70851 16.9663 10.1455 16.5797 10.715C16.1931 11.2845 15.9908 11.959 16 12.6472V13.3972C14.682 13.4314 13.376 13.1391 12.1983 12.5463C11.0206 11.9535 10.0077 11.0787 9.25 9.99973C9.25 9.99973 6.25 16.7497 13 19.7497C11.4554 20.7982 9.61537 21.3239 7.75 21.2497C14.5 24.9997 22.75 21.2497 22.75 12.6247C22.7493 12.4158 22.7292 12.2074 22.69 12.0022C23.4555 11.2473 23.9956 10.2943 24.25 9.24973V9.24973Z" stroke="#32394D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    </svg>
+                    </a>
+                <a class="social-link"  href="#"><svg class="social-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.9">
+                    <circle cx="16" cy="16" r="15.25" stroke="#32394D" stroke-width="1.5"/>
+                    <path d="M23.5167 11.815C23.4323 11.4591 23.2604 11.1329 23.0184 10.8696C22.7763 10.6062 22.4728 10.4149 22.1383 10.315C20.9162 10 16.0277 10 16.0277 10C16.0277 10 11.1393 10 9.91722 10.345C9.58273 10.4449 9.27915 10.6362 9.03712 10.8996C8.79509 11.1629 8.6232 11.4891 8.5388 11.845C8.31513 13.1542 8.20573 14.4822 8.21195 15.8125C8.20398 17.1528 8.31339 18.491 8.5388 19.81C8.63185 20.1549 8.80759 20.4686 9.04906 20.7209C9.29052 20.9731 9.58954 21.1554 9.91722 21.25C11.1393 21.595 16.0277 21.595 16.0277 21.595C16.0277 21.595 20.9162 21.595 22.1383 21.25C22.4728 21.1501 22.7763 20.9588 23.0184 20.6954C23.2604 20.4321 23.4323 20.1059 23.5167 19.75C23.7386 18.4507 23.848 17.1328 23.8435 15.8125C23.8515 14.4722 23.7421 13.134 23.5167 11.815Z" stroke="#32394D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.429 18.2644L18.5145 15.8119L14.429 13.3594V18.2644Z" stroke="#32394D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    </svg>
+                    </a>
+            </div>
+        </div>
+        <nav class="pt-7 pb-3">
+            <ul class="flex flex-col space-x-2 space-y-2 justify-center md:justify-between lg:flex-row lg:space-y-0">
+                <li><a class="text-xs ml-2 whitespace-nowrap hover:underline hover:text-lightGreen lg:ml-0" href="#">ლეგალიზაცია</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline hover:text-lightGreen" href="#">თავისუფალი განათლება</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline hover:text-lightGreen" href="#">ნამდვილი თავდაცვა</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline hover:text-lightGreen" href="#">ძალაუფლება ხალხს</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline hover:text-lightGreen" href="#">ჩვენი ხედვა</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline hover:text-lightGreen" href="#">ჩვენი ამბავი</a></li>
+                <li><a class="text-xs whitespace-nowrap hover:underline hover:text-lightGreen" href="#">როგორი ქვეყანა გვინდა</a></li>
+            </ul>
+        </nav>
+        <hr class="bg-grayOpacityFull bg-opacity-30 h-[2px] mb-3">
+        <span class="text-xs">ყველა საავტორო უფლების თავზეც გავიარეთ.გირჩი</span>
+    </footer>
+
+
+    <script src="../src/index.js"></script>
+    <script src="../src/news.js"></script>
+</body>
+</html>
