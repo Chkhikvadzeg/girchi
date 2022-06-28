@@ -5,7 +5,12 @@ module.exports = {
     './**/*.{html,js}',
   ],
   theme: {
-    
+    screens: {
+      'sm': '768px',
+      'md': '860px',
+      'lg': '1024px',
+      'xl': '1360px',
+    },
     extend: {
       colors: {
         'veryLightGreen': '#dfffe4',

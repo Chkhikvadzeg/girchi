@@ -559,15 +559,15 @@ html {
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+}
+
+@media (min-width: 860px) {
+  .container {
+    max-width: 860px;
   }
 }
 
@@ -577,15 +577,9 @@ html {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1360px) {
   .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+    max-width: 1360px;
   }
 }
 
@@ -729,10 +723,6 @@ html {
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.mr-24 {
-  margin-right: 6rem;
 }
 
 .block {
@@ -1726,7 +1716,7 @@ html {
   outline-offset: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 860px) {
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -1805,24 +1795,16 @@ html {
     margin-top: 0px;
   }
 
+  .lg\:mr-20 {
+    margin-right: 5rem;
+  }
+
   .lg\:ml-0 {
     margin-left: 0px;
   }
 
   .lg\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .lg\:mr-24 {
-    margin-right: 6rem;
-  }
-
-  .lg\:mr-2 {
-    margin-right: 0.5rem;
-  }
-
-  .lg\:mr-20 {
-    margin-right: 5rem;
   }
 
   .lg\:block {
@@ -1891,14 +1873,18 @@ html {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .lg\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(6rem * var(--tw-space-x-reverse));
-    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .lg\:p-3 {
     padding: 0.75rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 
   .lg\:pl-0 {
@@ -1959,7 +1945,7 @@ html {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1360px) {
   .xl\:mt-0 {
     margin-top: 0px;
   }
