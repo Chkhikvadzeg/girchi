@@ -1517,12 +1517,14 @@ html {
 }
 
 .header-nav.active {
+  transition: transform .3s ease-in-out;
   transform: scaleY(1);
   opacity: 1;
   display: block;
 }
 
 .dropdown-img.active {
+  transition: transform .3s ease-in-out;
   transform: rotate(-180deg);
 }
 
@@ -1531,6 +1533,7 @@ html {
 }
 
 .dropdown.active .dropdown-content {
+  transition: transform .3s ease-in-out;
   opacity: 1;
   transform: scaleY(1);
   max-height: 1000px;
@@ -1547,6 +1550,7 @@ html {
 }
 
 .projects-page.active {
+  transition: transform .3s ease-in-out;
   background: #32394d;
   color: white;
 }
@@ -1566,6 +1570,7 @@ html {
 }
 
 .news-dropdown-img.active {
+  transition: transform .3s ease-in-out;
   transform: rotate(-180deg);
 }
 
@@ -1596,6 +1601,7 @@ html {
 }
 
 .nav-dropdown.active .nav-hidden {
+  transition: transform .3s ease-in-out;
   transform: scaleY(1);
   opacity: 1;
   display: block;
@@ -1757,16 +1763,6 @@ html {
     justify-content: space-between;
   }
 
-  .md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  .md\:px-48 {
-    padding-left: 12rem;
-    padding-right: 12rem;
-  }
-
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1795,16 +1791,16 @@ html {
     margin-top: 0px;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:mr-20 {
     margin-right: 5rem;
   }
 
   .lg\:ml-0 {
     margin-left: 0px;
-  }
-
-  .lg\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .lg\:block {

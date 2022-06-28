@@ -37,12 +37,14 @@
 }
 
 .header-nav.active {
+    transition: transform .3s ease-in-out;
     transform: scaleY(1);
     opacity: 1;
     display: block;
 }
 
 .dropdown-img.active {
+    transition: transform .3s ease-in-out;
     transform: rotate(-180deg);
 }
 
@@ -51,6 +53,7 @@
 }
 
 .dropdown.active .dropdown-content {
+    transition: transform .3s ease-in-out;
     opacity: 1;
     transform: scaleY(1);
     max-height: 1000px;
@@ -67,6 +70,7 @@
 }
 
 .projects-page.active {
+    transition: transform .3s ease-in-out;
     background: #32394d;
     color: white;
 }
@@ -86,6 +90,7 @@
 }
 
 .news-dropdown-img.active {
+    transition: transform .3s ease-in-out;
     transform: rotate(-180deg);
 }
 
@@ -118,6 +123,7 @@
 
 
 .nav-dropdown.active .nav-hidden {
+    transition: transform .3s ease-in-out;
     transform: scaleY(1);
     opacity: 1;
     display: block;
