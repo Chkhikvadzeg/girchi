@@ -129,6 +129,10 @@
     display: block;
 }
 
+.projects-more {
+    scroll-behaviour: smooth;
+}
+
 @media screen and (min-width: 1024px) {
     .nav-hidden {
         transform: scaleY(1);
